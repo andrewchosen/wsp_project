@@ -3,10 +3,100 @@
 WSP COMPONENT LIBRARY STYLESHEET
 ================================================================================ */
 
+body {
+	font-family: helvetica, arial, sans-serif;
+	background: #3D403E;
+}
 
+p {
+	margin: 12px 0;
+	line-height: 1.2em;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+.container {
+	width: 66.667%;
+	margin: auto;
+}
+
+header,section {
+	padding: 30px;
+	overflow: auto;
+}
+
+.column {
+	display: block;
+	float: left;
+}
+
+h1,h2,h3 {
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 2em;
+}
 
 /* HEADER SPECIFIC ======================================== */
+header {
+	background: #1E1E20;
+	color: #f5f5f5;
+}
+
+header h1 {
+	font-size: 3em;
+}
 
 /* ABOUT SPECIFIC ======================================== */
+section#about {
+	background: #2A2C2B;
+	color: #6A7D7B;
+}
+
+section#about h2 {
+	color: #e3d4b7;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #6A7D7B;
+}
+
+section#about img {
+	width: 32.52688172043011%;
+	height: auto;
+	margin-right: 2.41935483870968%;
+	border-radius: 300px;
+}
+
+section#about .details {
+	width: 65.05376344086021%;
+}
 
 /* COMPONENTS SPECIFIC ======================================== */
+section#blog article {
+	padding: 30px;
+	background: #FFFFDB;
+	color: #586967;
+	margin-top: 30px;
+}
+
+section#blog article:first-child {
+	margin-top: 0;
+}
+
+section#blog h2{
+	color: #1E1E20;
+}
+
+section#blog img {
+	width: 100%;
+	height: auto;
+	margin: 30px 0;
+}
+
+section#blog h3 {
+	font-size: 1.5em;
+	text-transform: uppercase;
+	color: #2A2C2B;
+}
