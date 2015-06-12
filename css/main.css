@@ -33,7 +33,7 @@ header,section {
 }
 
 h1,h2,h3 {
-	font-weight: 700;
+	font-weight: 300;
 }
 
 h2 {
@@ -76,7 +76,7 @@ section#about .details {
 /* COMPONENTS SPECIFIC ======================================== */
 section#blog article {
 	padding: 30px;
-	background: #FFFFDB;
+	background: #FFFFEC;
 	color: #586967;
 	margin-top: 30px;
 }
@@ -87,6 +87,8 @@ section#blog article:first-child {
 
 section#blog h2{
 	color: #1E1E20;
+	text-transform: uppercase;
+	font-weight: 500;
 }
 
 section#blog img {
