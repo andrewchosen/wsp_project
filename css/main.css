@@ -40,6 +40,18 @@ h2 {
 	font-size: 2em;
 }
 
+a.button {
+	display: inline-block;
+	background: #2A2C2B;
+	padding: 12px;
+	color: #FFF;
+	margin-top: 12px;
+}
+
+a.button:hover {
+	background: #1E1E20;
+}
+
 /* HEADER SPECIFIC ======================================== */
 header {
 	background: #1E1E20;
