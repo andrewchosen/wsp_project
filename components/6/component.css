@@ -2,7 +2,49 @@
 ================================================================================
 COMPONENT STYLESHEET
 ================================================================================ */
+body {
+	font: 12px/1.4 arial,sans-serif;
+	color: #999;
+}
 
-/* HEADER ======================================== */
+h1 {
+ font-size: 1.1rem;
+ letter-spacing: 2px;
+ color: #e1e5e8;
+ text-transform: uppercase;
+}
 
-/* HEADER ======================================== */
+/* SECTION ======================================== */
+
+section {
+	margin-top: 30px;
+	background: #1e1e1e;
+}
+
+.container {
+	max-width: 1200px;
+	position: relative;
+	margin: auto;
+	padding: 144px 0;
+}
+
+section p:first-of-type {
+	margin: 30px 0;
+	width: 555px;
+}
+
+section a {
+	display: inline-block;
+	background: #d1d1d1;
+	color: #1e1e1e;
+	padding: 15px 40px;
+	text-transform: uppercase;
+	border-radius: 2px;
+}
+
+section img {
+	position: absolute;
+	top: -30px;
+	right: 0;
+}
+

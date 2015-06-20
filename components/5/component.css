@@ -3,6 +3,73 @@
 COMPONENT STYLESHEET
 ================================================================================ */
 
-/* HEADER ======================================== */
+body {
+	font: 14px/1.4 arial,sans-serif;
+	color: #e9ecf1;
+}
 
-/* HEADER ======================================== */
+/* SECTION ======================================== */
+
+section {
+	background: #22272d;
+}
+
+.container {
+	max-width: 1000px;
+	padding: 80px 0;
+	margin: auto;
+	overflow: auto;
+}
+
+article {
+	padding-left: 20px;
+	background: url("images/quote.png") no-repeat left 20%;
+}
+
+article:nth-child(n+2){
+	display: none;
+}
+
+article p {
+	font-size: 1.1rem;
+	font-style: italic;
+	margin-bottom: 16px;
+}
+
+article h3 {
+	color: #939498;
+	padding-top: 22px;
+}
+
+article h4 {
+	font-size: .7rem;
+	color: #939498;
+}
+
+article h4 a {
+	color: #2cc7e5;
+}
+
+article, ul {
+	width: 50%;
+	float: right;
+	clear: both;
+}
+
+ul {
+	margin-top: 22px;
+	text-align: center;
+}
+
+ul li {
+	display: inline-block;
+}
+
+ul li a {
+	display: block;
+	text-indent: -9999px;
+	width: 15px;
+	height: 4px;
+	background-color: #298a90;
+}
+

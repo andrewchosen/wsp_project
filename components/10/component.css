@@ -3,6 +3,156 @@
 COMPONENT STYLESHEET
 ================================================================================ */
 
-/* HEADER ======================================== */
+body {
+	font: 14px/1.4 arial,sans-serif;
+	color: #999;
+	background-color: #333;
+}
+
+.container {
+	max-width: 1000px;
+	margin: auto;
+}
 
 /* HEADER ======================================== */
+
+footer > section:nth-of-type(1){
+	background: #222;
+	overflow: auto;
+	padding: 10px 0;
+}
+
+section:nth-of-type(1) img {
+	float: left;
+	text-align: left;
+}
+
+footer > section:nth-of-type(1) ul {
+	display: inline-block;
+	float: right;
+	text-align: right;
+}
+
+footer > section:nth-of-type(1) ul li {
+	display: inline-block;
+}
+
+section:nth-of-type(1) ul li a {
+	display: block;
+	text-indent: -9999px;
+	width: 20px;
+	height: 20px;
+	background-color: #ccc;
+}
+
+/* MAIN SECTION ======================================== */
+
+.container > section {
+	margin: 40px 0;
+}
+
+.container > section:nth-of-type(1) {
+	width: calc(25% - 20px);
+	margin-right: 20px;
+	float: left;
+}
+
+.container > section:nth-of-type(2){
+	width: 50%;
+	float: left;
+}
+
+.container > section:nth-of-type(3){
+	width: calc(25% - 20px);
+	margin-left: 20px;
+	float: left;
+}
+
+h2 {
+	color: #fff;
+	font-size: 1.1rem;
+	padding-bottom: 10px;
+	margin-bottom: 12px;
+}
+
+h2::before {
+	content: "[ ";
+}
+
+h2::after {
+	content: " ]";
+}
+
+/*SECTION 1*/
+
+.container > section:nth-of-type(1) li {
+	margin-top: 16px;
+	padding-left: 20px;
+}
+
+.location {
+	background: url("images/location-icon.jpg") no-repeat left top;
+}
+
+.phone {
+	background: url("images/phone-icon.jpg") no-repeat left top;
+}
+
+.email {
+	background: url("images/email-icon.jpg") no-repeat left top;
+}
+
+/*SECTION 2*/
+
+.container > section:nth-of-type(2) img {
+	width: 100%;
+	height:;
+}
+
+.container > section:nth-of-type(2) li:nth-child(1) {
+	width: calc(100% / 3 * 2);
+	float: left;
+}
+
+.container > section:nth-of-type(2) li:nth-child(n+2) {
+	width: calc(100% / 3 / 2 - 6px);
+	margin-left: 6px;
+	float: left;
+}
+
+/*SECTION 3*/
+
+.container > section:nth-of-type(3) li {
+	padding-bottom: 12px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #505050;
+}
+
+.container > section:nth-of-type(3) li img {
+	float: left;
+	padding: 4px 10px 0 0;
+}
+
+.container > section:nth-of-type(3) li:last-of-type{
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+/*COPYRIGHT */
+footer > section:nth-of-type(2){
+	clear: both;
+	background: #222;
+	overflow: auto;
+	padding: 10px 0;
+}
+
+footer > section:nth-of-type(2) p {
+	width: 50%;
+	float: left;
+}
+
+footer > section:nth-of-type(2) a{
+	display: block;
+	text-align: right;
+}

@@ -3,6 +3,110 @@
 COMPONENT STYLESHEET
 ================================================================================ */
 
-/* HEADER ======================================== */
+body {
+	font: 14px/1.4 arial,sans-serif;
+	color: #1e1e1e;
+}
 
-/* HEADER ======================================== */
+section {
+	max-width: 960px;
+	margin: auto;
+	padding: 60px 0;
+}
+
+h1, section li p:first-child, button {
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 1.2rem;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+/* CONTACT LIST ======================================== */
+
+section ul {
+	overflow: auto;
+	clear: both;
+}
+
+section li {
+	width: calc(100% / 3);
+	float: left;
+	padding-left: 50px;
+}
+
+section li p:nth-child(2){
+	color: #999;
+}
+
+section li.call {
+	background: url("images/phone-icon.png") no-repeat left 50%;
+}
+
+section li.location {
+	background: url("images/location-icon.png") no-repeat left 50%;
+}
+
+section li.email {
+	background: url("images/email-icon.png") no-repeat left 50%;
+}
+
+/* FORM ======================================== */
+
+form {
+	margin-top: 60px;
+	overflow: auto;
+	clear: both;
+}
+
+label {
+	display: none;
+}
+
+fieldset {
+	width: calc(50% - 5px);
+	float: left;
+	margin-right: 5px;
+}
+
+input,textarea {
+	border: 1px solid #ccc;
+}
+
+input {
+	width: 100%;
+	padding: 8px;
+}
+
+input:nth-of-type(1) {
+	margin-bottom: 5px;
+}
+
+textarea {
+	width: 50%;
+	float: left;
+	height: 79px;
+}
+
+form > p:last-of-type {
+	clear: left;
+	float: left;
+	color: #999;
+	display: inline-block;
+	text-align: left;
+	margin-top: 30px;
+}
+
+button {
+	display: inline-block;
+	text-align: right;
+	float: right;
+	padding: 8px 24px;
+	background-color: #1e1e1e;
+	color: #fff;
+	border: 0;
+	margin-top: 20px;
+	border-radius: 2px;
+}

@@ -3,6 +3,72 @@
 COMPONENT STYLESHEET
 ================================================================================ */
 
-/* HEADER ======================================== */
+/* SECTION ======================================== */
+
+section {
+	background: url("images/background.jpg") no-repeat;
+	background-size: cover;
+	font-family: arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	padding: 100px 0;
+}
+
+section em {
+	color: #fdc401;
+	display: block;
+}
+
+section h2 {
+	display: inline-block;
+	position: relative;
+	font-size: 1.2rem;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	border-bottom: 2px solid #404356;
+}
+
+section h2::after {
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	left: calc(50% - 50px);
+	display: block;
+	width: 100px;
+	height: 2px;
+	background: #fdc401;
+}
+
+section h1 {
+	position: relative;
+	display: inline-block;
+	font-size: 3rem;
+	margin-bottom: 30px;
+}
+
+section h1::before {
+	position: absolute;
+	top: -6px;
+	left: -56px;
+	content: "[";
+	font-size: 90px;
+}
+
+section h1::after {
+	position: absolute;
+	top: -6px;
+	right: -56px;
+	content: "]";
+	font-size: 90px;
+}
+
+section a {
+	display: inline-block;
+	padding: 17px 23px;
+	color: #FFF;
+	border: 1px solid #494b5a;
+}
 
 /* HEADER ======================================== */

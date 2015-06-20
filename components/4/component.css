@@ -3,6 +3,116 @@
 COMPONENT STYLESHEET
 ================================================================================ */
 
-/* HEADER ======================================== */
+body {
+	font: 14px/1.4 arial,sans-serif;
+	text-align: center;
+	color: #808080;
+}
+
+h1 {
+	font-size: 1.8rem;
+	font-weight: 300;
+}
+
+h2 {
+	display: none;
+}
+
+h1,h3 {
+	text-transform: uppercase;
+	color: #444;
+}
 
 /* HEADER ======================================== */
+
+section {
+	max-width: 1000px;
+	padding: 100px 0;
+	margin: auto;
+	overflow: auto;
+}
+
+section > p {
+	padding-bottom: 18px;
+	margin: 40px 0 120px 0;
+	position: relative;
+}
+
+section > p::before {
+	position: absolute;
+	content: "";
+	bottom: 0;
+	left: calc(50% - 115px);
+	display: block;
+	background-color: #CCC;
+	width: 230px;
+	height: 1px;
+}
+
+section > p::after {
+	position: absolute;
+	content: "\2022";
+	color: #ccc;
+	font-size: 2rem;
+	text-align: center;
+	width: 36px;
+	line-height: 1;
+	bottom: -16px;
+	left: calc(50% - 18px);
+	display: block;
+	background-color: #fff;
+}
+
+/* SERVICES ======================================== */
+
+section ul {
+	background: url("images/logo.jpg") no-repeat center top;
+}
+
+section li {
+	margin-top: 20px;
+}
+
+section li:nth-of-type(odd) {
+	text-align: right;
+}
+
+section li:nth-of-type(even) {
+	text-align: left;
+}
+
+section li:nth-of-type(1), section li:nth-of-type(2), section li:nth-of-type(3), section li:nth-of-type(4){
+	float: left;
+	width: calc(50% - 214px);
+}
+
+section li:nth-of-type(1),section li:nth-of-type(3){
+	margin-right: 214px;
+}
+
+section li:nth-of-type(2),section li:nth-of-type(4){
+	margin-left: 214px;
+}
+
+section li:nth-of-type(5) {
+	margin-right: 144px;
+}
+
+section li:nth-of-type(6) {
+	margin-left: 144px;
+}
+
+section li:nth-of-type(6)::after {
+	clear: both;
+}
+
+section li:nth-of-type(7) {
+	width: 25%;
+	margin: auto;
+	text-align: center;
+}
+
+section li:nth-of-type(5), section li:nth-of-type(6){
+	float: left;
+	width: calc(50% - 144px);
+}

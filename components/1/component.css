@@ -8,24 +8,29 @@ body {
 	background: #FFF;
 }
 
-.container {
+section {
 	width: 80%;
 	margin: auto;
+	overflow: auto;
 }
 
 /* TOP NAV ======================================== */
 
 header {
-	position: relative;
+	overflow: auto;
 }
 
-header .container > ul {
-	overflow: auto;
+header > section:nth-of-type(1) ul:nth-of-type(1) {
+	margin-bottom: 20px;
+	width: 40%;
+}
+
+header > section:nth-of-type(1) ul:nth-of-type(2) {
 	margin-bottom: 20px;
 	width: 60%;
 }
 
-header .container > ul::before {
+/*header > section:nth-of-type(1)::before {
 	background-color: #3b363a;
 	position: absolute;
 	content: "";
@@ -33,52 +38,63 @@ header .container > ul::before {
 	left: 0px;
 	width: 100%;
 	height: 46px;
-}
+	z-index: 0;
+}*/
 
-header .container > ul li {
+header > section:nth-of-type(1) ul:nth-of-type(1) li {
 	float: left;
 }
 
-header .container > ul li a {
+header > section:nth-of-type(1) ul li a {
+	border-right: 1px solid #514c50;
+	z-index: 1;
+}
+
+header > section:nth-of-type(1) ul:nth-of-type(1) li a {
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	display: block;
 	position: relative;
-	border-right: 1px solid #514c50;
 	text-indent: -9999px;
 	width: 46px;
 	height: 46px;
 }
 
-header .container > ul > li:first-child a {
+header > section:nth-of-type(1) ul:nth-of-type(2) li a {
+	color: #fff;
+	text-align: right;
+	display: inline-block;
+}
+
+header > section:nth-of-type(1) ul > li:first-child a {
 	border-left: 1px solid #514c50;
 }
 
-header .container > ul .twitter {
+header > section:nth-of-type(1) ul .twitter {
 	background-image: url("images/twitter.jpg");
 }
 
-header .container > ul .facebook {
+header > section:nth-of-type(1) ul .facebook {
 	background-image: url("images/facebook.jpg");
 }
 
-header .container > ul .google {
+header > section:nth-of-type(1) ul .google {
 	background-image: url("images/google.jpg");
 }
 
-header .container > ul .pinterest {
+header > section:nth-of-type(1) ul .pinterest {
 	background-image: url("images/pinterest.jpg");
 }
 
-header .container > ul .instagram {
+header > section:nth-of-type(1) ul .instagram {
 	background-image: url("images/instagram.jpg");
 }
 
-header .container > ul .rss {
+header > section:nth-of-type(1) ul .rss {
 	background-image: url("images/rss.jpg");
 }
 
-header .container ul:nth-of-type(1){
+header section:nth-of-type(1) ul:nth-of-type(1){
 	float: left;
 	width: 40%;
 }

@@ -3,6 +3,71 @@
 COMPONENT STYLESHEET
 ================================================================================ */
 
-/* HEADER ======================================== */
+body {
+	font: 14px/1.4 arial,sans-serif;
+	color: #3f4a4c;
+}
+
+section {
+	width: 960px;
+	margin: auto;
+	padding: 60px 0;
+}
 
 /* HEADER ======================================== */
+
+h1 {
+	position: relative;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	text-align: center;
+	width: 400px;
+	margin: 0 auto 30px auto;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
+}
+
+h1::after {
+	position: absolute;
+	content: "";
+	bottom: -1px;
+	left: calc(50% - 40px);
+	width: 80px;
+	height: 1px;
+	background-color: #70e0e1;
+}
+
+h1::before {
+	position: absolute;
+	content: "";
+	bottom: -4px;
+	left: calc(50% - 4px);
+	width: 8px;
+	height: 8px;
+	background-color: #fff;
+	border-radius: 50%;
+	border: 1px solid #70e0e1;
+	z-index: 1;
+}
+
+/* PORTFOLIO ITEMS ======================================== */
+
+article {
+	width: calc(20% - 8px);
+	margin: 4px;
+	float: left;
+}
+
+article img {
+	width: 100%;
+	height: auto;
+}
+
+article h3 {
+	margin: 10px 0;
+}
+
+article p {
+	color: #999;
+	font-size: 0.7rem;
+}

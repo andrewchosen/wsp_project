@@ -10,25 +10,27 @@
 	<!-- Component -->
 
 	<section>
-		<h2>Contact</h2>
+		<h1>Contact</h1>
 		<ul>
-			<li>
+			<li class="call">
 				<p><strong>Call Us</strong></p>
 				<p>+61 3 8376 6284</p>
 			</li>
-			<li>
+			<li class="location">
 				<p><strong>Address</strong></p>
 				<p>245 Quigley Blvd, Ste K</p>
 			</li>
-			<li>
+			<li class="email">
 				<p><strong>Email</strong></p>
 				<p>support@bestlooker.pro</p>
 			</li>
 		</ul>
 		<form>
-			<p><label>Name</label><input type="text"></p>
-			<p><label>Email</label><input type="email"></p>
-			<p><label>Message</label><textarea></textarea></p>
+			<fieldset>
+				<p><label for="name">Name</label><input id="name" type="text"></p>
+				<p><label for="email">Email</label><input id="email" type="email"></p>
+			</fieldset>
+			<p><label for="message">Message</label><textarea id="message"></textarea></p>
 			<p>All fields are required</p>
 			<button>Submit Message</button>
 		</form>
