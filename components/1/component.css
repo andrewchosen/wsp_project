@@ -12,6 +12,7 @@ section {
 	width: 80%;
 	margin: auto;
 	overflow: auto;
+	z-index: 0;
 }
 
 /* TOP NAV ======================================== */
@@ -28,9 +29,10 @@ header > section:nth-of-type(1) ul:nth-of-type(1) {
 header > section:nth-of-type(1) ul:nth-of-type(2) {
 	margin-bottom: 20px;
 	width: 60%;
+	float: left;
 }
 
-header > section:nth-of-type(1)::before {
+header > section:nth-of-type(1) ul::before {
 	background-color: #3b363a;
 	position: absolute;
 	content: "";
