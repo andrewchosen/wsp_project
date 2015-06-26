@@ -43,9 +43,10 @@ section h2::after {
 
 section h1 {
 	position: relative;
-	display: inline-block;
+	display: block;
+	max-width: 600px;
 	font-size: 3rem;
-	margin-bottom: 30px;
+	margin: 0 auto 30px auto;
 }
 
 section h1::before {
@@ -69,6 +70,10 @@ section a {
 	padding: 17px 23px;
 	color: #FFF;
 	border: 1px solid #494b5a;
+}
+
+section a:hover {
+	border: 1px solid #FFF;
 }
 
 /* HEADER ======================================== */

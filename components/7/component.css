@@ -11,6 +11,7 @@ body {
 h1,h2,h3 {
 	text-transform: uppercase;
 	color: #474747;
+	font-weight: 700;
 }
 
 h1 {
@@ -58,6 +59,10 @@ article::before,article > p, article > ul {
 	display: none;
 }
 
+article:hover::before, article:hover > p, article:hover > ul {
+	display: initial;
+}
+
 article::before {
 	position: absolute;
 	top: 0;
@@ -65,7 +70,7 @@ article::before {
 	content: "";
 	width: 100%;
 	height: 256px;
-	background: rgba(150,150,150,.8);
+	background: rgba(80,80,80,.8);
 	z-index: 1;
 }
 

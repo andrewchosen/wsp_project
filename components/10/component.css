@@ -6,7 +6,6 @@ COMPONENT STYLESHEET
 body {
 	font: 14px/1.4 arial,sans-serif;
 	color: #999;
-	background-color: #333;
 }
 
 .container {
@@ -16,33 +15,182 @@ body {
 
 /* HEADER ======================================== */
 
+footer {
+	margin-top: 60px;
+	background-color: #333;	
+}
+
 footer > section:nth-of-type(1){
 	background: #222;
-	overflow: auto;
-	padding: 10px 0;
+	height: 76px;
 }
 
 section:nth-of-type(1) img {
 	float: left;
 	text-align: left;
+	margin-top: 10px;
 }
 
 footer > section:nth-of-type(1) ul {
-	display: inline-block;
 	float: right;
 	text-align: right;
 }
 
+footer > section:nth-of-type(1) ul li:first-child {
+	border-left: 1px solid #888;
+}
+
 footer > section:nth-of-type(1) ul li {
-	display: inline-block;
+	float: left;
+	border-right: 1px solid #888;
+	position: relative;
 }
 
 section:nth-of-type(1) ul li a {
 	display: block;
+	text-align: center;
 	text-indent: -9999px;
-	width: 20px;
-	height: 20px;
-	background-color: #ccc;
+	width: 76px;
+	height: 76px;
+	padding-top: 62px;
+	font-size: .7rem;
+	color: #FFF;
+}
+
+section:nth-of-type(1) ul li .facebook {
+	background: url("images/facebook.jpg") no-repeat 50% 50%;
+}
+
+section:nth-of-type(1) ul li .twitter {
+	background: url("images/twitter.jpg") no-repeat 50% 50%;
+}
+
+section:nth-of-type(1) ul li .linkedin {
+	background: url("images/linkedin.jpg") no-repeat 50% 50%;
+}
+
+section:nth-of-type(1) ul li .dribbble {
+	background: url("images/dribbble.jpg") no-repeat 50% 50%;
+}
+
+section:nth-of-type(1) ul li .youtube {
+	background: url("images/youtube.jpg") no-repeat 50% 50%;
+}
+
+section:nth-of-type(1) ul li .google {
+	background: url("images/google.jpg") no-repeat 50% 50%;
+}
+
+section:nth-of-type(1) ul li:hover a {
+	text-indent: 0;
+	height: 91px;
+	margin-top: -15px;
+}
+
+section:nth-of-type(1) ul li:hover a::before {
+	content: "";
+	position: absolute;
+	top: -15px;
+	left: -15px;
+	width: 0;
+	height: 0;
+	border-top: 7px solid transparent;
+	border-left: 7px solid transparent;
+}
+
+section:nth-of-type(1) ul li:hover a::after {
+	content: "";
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	width: 0;
+	height: 0;
+	border-top: 7px solid transparent;
+	border-right: 7px solid transparent;
+}
+
+section:nth-of-type(1) ul li:hover .facebook {
+	background: #3b5998 url("images/facebook2.jpg") no-repeat 50% 40%;
+}
+
+section:nth-of-type(1) ul li:hover .facebook::before {
+	border-bottom: 8px solid #233863;
+	border-right: 8px solid #233863;
+}
+
+section:nth-of-type(1) ul li:hover .facebook::after {
+	border-left: 8px solid #233863;
+	border-bottom: 8px solid #233863;
+}
+
+section:nth-of-type(1) ul li:hover .twitter {
+	background: #00aced url("images/twitter2.jpg") no-repeat 50% 40%;
+}
+
+section:nth-of-type(1) ul li:hover .twitter::before {
+	border-bottom: 8px solid #1c5ca5;
+	border-right: 8px solid #1c5ca5;
+}
+
+section:nth-of-type(1) ul li:hover .twitter::after {
+	border-left: 8px solid #1c5ca5;
+	border-bottom: 8px solid #1c5ca5;
+}
+
+section:nth-of-type(1) ul li:hover .linkedin {
+	background: #007bb6 url("images/linkedin2.jpg") no-repeat 50% 40%;
+}
+
+section:nth-of-type(1) ul li:hover .linkedin::before {
+	border-bottom: 8px solid #004d72;
+	border-right: 8px solid #004d72;
+}
+
+section:nth-of-type(1) ul li:hover .linkedin::after {
+	border-left: 8px solid #004d72;
+	border-bottom: 8px solid #004d72;
+}
+
+section:nth-of-type(1) ul li:hover .dribbble {
+	background: #C73B6F url("images/dribbble2.jpg") no-repeat 50% 40%;
+}
+
+section:nth-of-type(1) ul li:hover .dribbble::before {
+	border-bottom: 8px solid #94063b;
+	border-right: 8px solid #94063b;
+}
+
+section:nth-of-type(1) ul li:hover .dribbble::after {
+	border-left: 8px solid #94063b;
+	border-bottom: 8px solid #94063b;
+}
+
+section:nth-of-type(1) ul li:hover .youtube {
+	background: #bb0000 url("images/youtube2.jpg") no-repeat 50% 40%;
+}
+
+section:nth-of-type(1) ul li:hover .youtube::before {
+	border-bottom: 8px solid #6d0101;
+	border-right: 8px solid #6d0101;
+}
+
+section:nth-of-type(1) ul li:hover .youtube::after {
+	border-left: 8px solid #6d0101;
+	border-bottom: 8px solid #6d0101;
+}
+
+section:nth-of-type(1) ul li:hover .google {
+	background: #dd4b39 url("images/google2.jpg") no-repeat 50% 40%;
+}
+
+section:nth-of-type(1) ul li:hover .google::before {
+	border-bottom: 8px solid #a62414;
+	border-right: 8px solid #a62414;
+}
+
+section:nth-of-type(1) ul li:hover .google::after {
+	border-left: 8px solid #a62414;
+	border-bottom: 8px solid #a62414;
 }
 
 /* MAIN SECTION ======================================== */
@@ -83,9 +231,9 @@ h2::after {
 	content: " ]";
 }
 
-/*SECTION 1*/
+/* ABOUT US */
 
-.container > section:nth-of-type(1) li {
+.container #about li {
 	margin-top: 16px;
 	padding-left: 20px;
 }
@@ -102,38 +250,38 @@ h2::after {
 	background: url("images/email-icon.jpg") no-repeat left top;
 }
 
-/*SECTION 2*/
+/* RECENT WORK */
 
-.container > section:nth-of-type(2) img {
+.container #recentwork img {
 	width: 100%;
 	height:;
 }
 
-.container > section:nth-of-type(2) li:nth-child(1) {
+.container #recentwork li:nth-child(1) {
 	width: calc(100% / 3 * 2);
 	float: left;
 }
 
-.container > section:nth-of-type(2) li:nth-child(n+2) {
+.container #recentwork li:nth-child(n+2) {
 	width: calc(100% / 3 / 2 - 6px);
 	margin-left: 6px;
 	float: left;
 }
 
-/*SECTION 3*/
+/* RECENT POSTS */
 
-.container > section:nth-of-type(3) li {
+.container #recentposts li {
 	padding-bottom: 12px;
 	margin-bottom: 10px;
 	border-bottom: 1px solid #505050;
 }
 
-.container > section:nth-of-type(3) li img {
+.container #recentposts li img {
 	float: left;
 	padding: 4px 10px 0 0;
 }
 
-.container > section:nth-of-type(3) li:last-of-type{
+.container #recentposts li:last-of-type{
 	border: 0;
 	padding: 0;
 	margin: 0;
@@ -152,7 +300,13 @@ footer > section:nth-of-type(2) p {
 	float: left;
 }
 
-footer > section:nth-of-type(2) a{
+footer a#top {
+	float: right;
+	width: 24px;
+	height: 24px;
+	background: #1DA879 url("images/arrow-up.svg") no-repeat 50% 50%;
+	background-size: 16px;
 	display: block;
-	text-align: right;
+	text-indent: -9999px;
+	border-radius: 50%;
 }

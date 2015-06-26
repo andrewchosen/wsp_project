@@ -8,6 +8,10 @@ body {
 	background: #FFF;
 }
 
+a.active {
+	color: #fe3710;
+}
+
 section {
 	width: 80%;
 	margin: auto;
@@ -59,6 +63,10 @@ header > section:nth-of-type(1) ul li a {
 	z-index: 1;
 }
 
+header > section:nth-of-type(1) ul li a:hover {
+	background-color: #453f44;
+}
+
 header > section:nth-of-type(1) ul:nth-of-type(1) li a {
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
@@ -74,10 +82,13 @@ header > section:nth-of-type(1) ul:nth-of-type(2) li {
 }
 
 header > section:nth-of-type(1) ul:nth-of-type(2) li a {
+	background-position: 18px 50%;
+	background-repeat: no-repeat;
+	text-transform: uppercase;
 	color: #fff;
 	display: block;
 	height: 46px;
-	padding: 12px 20px;
+	padding: 12px 20px 12px 40px;
 }
 
 header > section:nth-of-type(1) ul > li:first-child a {
@@ -106,6 +117,14 @@ header > section:nth-of-type(1) ul .instagram {
 
 header > section:nth-of-type(1) ul .rss {
 	background-image: url("images/rss.jpg");
+}
+
+header .login {
+	background-image: url("images/login.png");
+}
+
+header .register {
+	background-image: url("images/register.png");
 }
 
 /* MAIN SECTION ======================================== */

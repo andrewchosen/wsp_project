@@ -71,13 +71,17 @@ fieldset {
 	margin-right: 5px;
 }
 
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
+   text-transform: uppercase;
+}
+
 input,textarea {
 	border: 1px solid #ccc;
+	padding: 8px;
 }
 
 input {
 	width: 100%;
-	padding: 8px;
 }
 
 input:nth-of-type(1) {
@@ -90,13 +94,24 @@ textarea {
 	height: 79px;
 }
 
-form > p:last-of-type {
+.required {
 	clear: left;
 	float: left;
 	color: #999;
 	display: inline-block;
 	text-align: left;
 	margin-top: 30px;
+}
+
+.required::before {
+	content: "";
+	display: block;
+	float: left;
+	margin-top: 2px;
+	margin-right: 6px;
+	width: 14px;
+	height: 14px;
+	background: url("images/info.svg") no-repeat center;
 }
 
 button {

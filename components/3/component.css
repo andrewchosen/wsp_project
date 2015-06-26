@@ -13,6 +13,14 @@ h1,h2,h3,article p:last-of-type,article p a {
 	text-transform: uppercase;
 }
 
+a,a:visited {
+	color: #000;
+}
+
+a:hover {
+	color: #4e8ce1
+}
+
 section {
 	max-width: 1000px;
 	margin: auto;

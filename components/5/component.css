@@ -11,7 +11,8 @@ body {
 /* SECTION ======================================== */
 
 section {
-	background: #22272d;
+	background: #22272d url("images/background.jpg") no-repeat center top;
+	background-size: cover;
 }
 
 .container {
@@ -36,7 +37,18 @@ article p {
 	margin-bottom: 16px;
 }
 
+article h3::before {
+	content: "";
+	background: url("images/stars.jpg") no-repeat 50% 50%;
+	width: 32px;
+	height: 10px;
+	position: absolute;
+	top: -5px;
+	left: 0;
+}
+
 article h3 {
+	position: relative;
 	color: #939498;
 	padding-top: 22px;
 }
