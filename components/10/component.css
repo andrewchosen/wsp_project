@@ -197,6 +197,7 @@ section:nth-of-type(1) ul li:hover .google::after {
 
 .container > section {
 	margin: 40px 0;
+	position: relative;
 }
 
 .container > section:nth-of-type(1) {
@@ -231,9 +232,19 @@ h2::after {
 	content: " ]";
 }
 
+h2 + *::before {
+	content: "";
+	position: absolute;
+	top: 32px;
+	left: 0;
+	width: 50px;
+	height: 2px;
+	background: #1DA879;
+}
+
 /* ABOUT US */
 
-.container #about li {
+#about li {
 	margin-top: 16px;
 	padding-left: 20px;
 }
@@ -252,36 +263,80 @@ h2::after {
 
 /* RECENT WORK */
 
-.container #recentwork img {
+#recentwork img {
 	width: 100%;
 	height:;
 }
 
-.container #recentwork li:nth-child(1) {
+#recentwork ul::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#recentwork li:nth-child(1) {
 	width: calc(100% / 3 * 2);
 	float: left;
 }
 
-.container #recentwork li:nth-child(n+2) {
+#recentwork li:nth-child(n+2) {
 	width: calc(100% / 3 / 2 - 6px);
 	margin-left: 6px;
 	float: left;
 }
+#recentwork .tweets {
+	position: relative;
+	margin-top: 12px;
+	background: #111;
+	padding: 8px 12px 8px 64px;
+}
+
+#recentwork .tweets::before {
+	content: "";
+	position: absolute;
+	top:0;
+	left: 0;
+	height: 54px;
+	width: 54px;
+	background: #00aced url("images/twitter.svg") no-repeat 50% 50%;
+	background-size: 28px;
+}
+
+#recentwork .tweets::after {
+	content: "";
+	position: absolute;
+	top: 21px;
+	left: 54px;
+	height: 0;
+	width: 0;
+	border-top: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 6px solid transparent;
+	border-left: 6px solid #00aced;
+}
+
+#recentwork .tweets a {
+	color: #1DA879
+}
+
+#recentwork .tweets strong a, #recentwork .tweets em {
+	color: #fff;
+}
 
 /* RECENT POSTS */
 
-.container #recentposts li {
+#recentposts li {
 	padding-bottom: 12px;
 	margin-bottom: 10px;
 	border-bottom: 1px solid #505050;
 }
 
-.container #recentposts li img {
+#recentposts li img {
 	float: left;
 	padding: 4px 10px 0 0;
 }
 
-.container #recentposts li:last-of-type{
+#recentposts li:last-of-type{
 	border: 0;
 	padding: 0;
 	margin: 0;
@@ -292,7 +347,8 @@ footer > section:nth-of-type(2){
 	clear: both;
 	background: #222;
 	overflow: auto;
-	padding: 10px 0;
+	padding: 20px 0;
+	position: relative;
 }
 
 footer > section:nth-of-type(2) p {
@@ -301,11 +357,13 @@ footer > section:nth-of-type(2) p {
 }
 
 footer a#top {
-	float: right;
-	width: 24px;
-	height: 24px;
+	position: absolute;
+	right: 20px;
+	bottom: 16px;
+	width: 28px;
+	height: 28px;
 	background: #1DA879 url("images/arrow-up.svg") no-repeat 50% 50%;
-	background-size: 16px;
+	background-size: 14px;
 	display: block;
 	text-indent: -9999px;
 	border-radius: 50%;
